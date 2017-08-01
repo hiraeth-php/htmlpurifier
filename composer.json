@@ -1,0 +1,26 @@
+{
+    "name": "hiraeth/htmlpurifier",
+    "description": "HTMLPurifier for the Hiraeth Nano-Framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":  "Matthew J. Sahagian",
+            "email": "msahagian@dotink.org",
+            "role":  "Lead Architect / Developer"
+        }
+    ],
+    "require": {
+        "ezyang/htmlpurifier": "^4.9"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "type": "opus-package",
+    "extra": {
+        "opus": {
+            "hiraeth/app": {
+                "plugin/config": ""
+            }
+        }
+    }
+}
