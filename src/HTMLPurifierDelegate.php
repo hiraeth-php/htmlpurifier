@@ -63,8 +63,8 @@ class HTMLPurifierDelegate implements Hiraeth\Delegate
 		);
 
 		foreach ([
-			'Cache.SerializerPath'              => $cache_path,
 			'Cache.SerializerPermissions'       => 0775,
+			'Cache.SerializerPath'              => $cache_path->getRealPath(),
 			'AutoFormat.RemoveEmpty.RemoveNbsp' => $this->config->get('htmlpurifier', 'remove_empty', TRUE),
 			'AutoFormat.RemoveEmpty'            => $this->config->get('htmlpurifier', 'remove_empty', TRUE),
 			'HTML.Trusted'                      => $this->config->get('htmlpurifier', 'trusted', FALSE),

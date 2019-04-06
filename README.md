@@ -25,8 +25,8 @@ No providers are included in this package.
 
 cache_path = writable/cache/htmlpurifier
 
-; Whether or not we should remove empty elements.  Note that if this is set to true, elements containing only
-; non-breaking space characters will also be removed.
+; Whether or not we should remove empty elements.  Note that if this is set to true, elements
+; containing only non-breaking space characters will also be removed.
 
 remove_empty = true
 
